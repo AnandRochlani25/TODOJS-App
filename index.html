@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>TODOJS</title>
+</head>
+<body>
+      <nav>
+        <li class="left">
+          <a href="#">Task List</a>
+        </li>
+        <li class="right"><a href="#">Add List</a></li>
+        <li href="#" class="right">
+          <a id="createList" class="fa-solid fa-plus btn" data-toggle="modal" data-target="#listForm"></a>
+        </li>
+      </nav>
+      
+    
+
+<div id="listForm" class="modal">
+  <div class="modal-content">
+    
+    <div class="form-group">
+     <form>
+      <h3 class="heading">Add List</h3>              
+      <input type="title" class="form-control" id="listName" aria-describedby="emailHelp" placeholder="Enter Title">
+      <div class="modal-footer border-top-0 d-flex justify-content-center">
+        <button data-dismiss="modal" id="addList" type="button" class="btn btn-success">Submit</button>
+        <button data-dismiss="modal" id="closeList" type="button" class="btn btn-error">Close</button>
+  
+      </div>
+    </form> 
+    </div>
+  </div>
+</div>
+
+   
+      
+      
+        <div id="lists" class="horizontal-centered">
+          
+        </div>
+        
+<div id="taskForm" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="form-group">
+     
+     <form>
+      <h3>Add Item</h3>            
+      <input type="title" class="form-control" id="taskName" aria-describedby="emailHelp" placeholder="Enter Task Name">
+      <div class="modal-footer border-top-0 d-flex justify-content-center">
+        <button data-dismiss="modal" id="addTask" type="button" class="btn btn-success">Submit</button>
+        <button data-dismiss="modal" id="closeTask" type="button" class="btn btn-error">Close</button>
+  
+      </div>
+    </form> 
+    </div>
+  </div>
+</div>
+
+<div class="modal1" id="modal1">
+  <button id="back">GO BACK</button>
+  <div id="popup" class="modal-content1">
+    
+    
+  </div>
+</div>
+
+
+       
+
+
+
+
+ 
+</body>
+</html>
+
+
+<script  src="index.js">
+</script>
